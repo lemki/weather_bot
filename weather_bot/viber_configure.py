@@ -18,5 +18,5 @@ def set_webhook():
         "unsubscribed",
         "conversation_started"
     ]
-    viber.set_webhook('https://841deaea4aa8.ngrok.io/bot/callback/', webhook_events=webhook_events)
+    viber.set_webhook('https://f6fc51a26d63.ngrok.io/bot/callback/', webhook_events=webhook_events)
 
