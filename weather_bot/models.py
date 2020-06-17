@@ -15,3 +15,6 @@ class ViberUser(models.Model):
     user = models.ForeignKey(get_user_model(), on_delete=models.SET_NULL, null=True, blank=True)
     is_active = models.BooleanField(default=True)
     is_blocked = models.BooleanField(default=False)
+
+    def __str__(self):
+        return f'{self.name}: {self.viber_id}'

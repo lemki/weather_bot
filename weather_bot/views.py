@@ -59,6 +59,6 @@ class CallbackView(View):
             )
             viber.send_messages(
                 viber_request.user.id,
-                TextMessage(text='Спасибо за подписку!')
+                TextMessage(text='Спасибо за подписку!', tracking_data='пользователь подписался')
             )
         return HttpResponse(status=200)
